@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:socialbaazar/Features/Feature1.dart';
+import 'package:socialbaazar/Features/Feature2.dart';
 
 import 'package:socialbaazar/Login/Login.dart';
 // import 'package:socialbaazar/Home.dart';
@@ -18,10 +20,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+     
 initialRoute: "/",
       routes: {
         "/":(context)=>   const Splash(),
         "/login":(context)=> const Login(),
+"/feature1":(context)=> const Feature1(),
+"/feature2":(context)=> const Feature2(),
 
       }
    
