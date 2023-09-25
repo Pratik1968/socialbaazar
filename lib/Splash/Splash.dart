@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:socialbaazar/Features/Feature1.dart';
+import 'package:socialbaazar/Feature1/Feature1.dart';
 import 'dart:async';
 
 import 'package:socialbaazar/Login/Login.dart';

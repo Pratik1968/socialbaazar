@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:socialbaazar/Features/Feature1.dart';
-import 'package:socialbaazar/Features/Feature2.dart';
+import 'package:go_router/go_router.dart';
+import 'package:socialbaazar/Feature1/Feature1.dart';
+import 'package:socialbaazar/Feature2/Feature2.dart';
 
 import 'package:socialbaazar/Login/Login.dart';
 // import 'package:socialbaazar/Home.dart';
@@ -8,27 +9,36 @@ import 'package:socialbaazar/Splash/Splash.dart';
 
 void main() {
 
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   MyApp({super.key});
+// GoRouter configuration
+final _router = GoRouter(
+  routes: [
+    GoRoute(
+      path: '/',
+      builder: (context, state) => const Splash(),
+    ),
+GoRoute(
+  path:"/Feature1",
+  builder: (context, state) => const Feature1(), 
 
+),
+GoRoute(
+  path: "/Feature2",
+  builder: (context, state) => const Feature2(),
+  ),
+  
+  ],
+);
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-     
-initialRoute: "/",
-      routes: {
-        "/":(context)=>   const Splash(),
-        "/login":(context)=> const Login(),
-"/feature1":(context)=> const Feature1(),
-"/feature2":(context)=> const Feature2(),
-
-      }
-   
+    return MaterialApp.router(
+      title: "Social Bazzar",
+      debugShowCheckedModeBanner: true,
+      routerConfig: _router,
     );
   }}
