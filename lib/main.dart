@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:socialbaazar/Feature1/Feature1.dart';
 import 'package:socialbaazar/Feature2/Feature2.dart';
+import 'package:socialbaazar/Feature3/Feature3.dart';
 
 import 'package:socialbaazar/Login/Login.dart';
 // import 'package:socialbaazar/Home.dart';
@@ -29,6 +30,10 @@ GoRoute(
 GoRoute(
   path: "/Feature2",
   builder: (context, state) => const Feature2(),
+  ),
+  GoRoute(
+  path: "/Feature3",
+  builder: (context, state) => const Feature3(),
   ),
   
   ],

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 // import 'package:socialbaazar/Feature2/Feature2.dart';
 import 'package:socialbaazar/Feature1/ImageContainer/Layout.dart';
 import 'package:socialbaazar/Feature1/TextContainer/Layout.dart';
+import 'package:socialbaazar/Feature1/ButtonGroup/Layout.dart';
 class Feature1 extends StatelessWidget{
   const Feature1({super.key});
   Future<bool> _onWillPop() async {
@@ -29,7 +30,7 @@ return WillPopScope(
     child: TextContainer()),
     Expanded(
     flex: 2,
-    child: ButtonContainer()),
+    child: ButtonGroup()),
     Expanded(
       
       flex: 1,

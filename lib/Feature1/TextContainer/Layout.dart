@@ -10,16 +10,21 @@ import 'package:socialbaazar/Feature1/TextContainer/Discription.dart';
   @override
   Widget build(BuildContext context) {
 return Container(
-  margin: const EdgeInsets.symmetric(horizontal: 20.0),
+  margin: const EdgeInsets.only(left: 29.0),
   child:   (
     Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-  Container(
-    margin: const EdgeInsets.only(bottom: 9.0),
-    child: const TitleText()
-    ),
-  const TextDiscription(),
+  Align(
+    alignment: Alignment.centerLeft,
+    child: Container(
+      margin: const EdgeInsets.only(bottom: 9.0),
+      child: const TitleText()
+      ),
+  ),
+  const Align(
+    alignment: Alignment.centerLeft,
+    child: TextDiscription()),
   
     ],)
   ),

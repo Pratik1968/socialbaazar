@@ -1,17 +1,18 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:socialbaazar/Feature1/TextContainer/layout.dart';
-import 'package:socialbaazar/Feature2/ButtonContainer/Layout.dart';
+import 'package:go_router/go_router.dart';
+import 'package:socialbaazar/Feature2/TextContainer/layout.dart';
+import 'package:socialbaazar/Feature2/ButtonGroup/Layout.dart';
 
 import 'package:socialbaazar/Feature2/ImageContainer/Layout.dart';
 import 'package:socialbaazar/Feature2/SignInContainer/Layout.dart';
-import 'package:socialbaazar/Feature2/SignInContainer/SignInText.dart';
 class Feature2 extends StatelessWidget{
+  
   const Feature2({super.key});
-
   @override
   Widget build(BuildContext context) {
-return(
+    
+return (
 const Scaffold(
   body: SafeArea(
     child: Column(
@@ -37,6 +38,7 @@ Expanded(
 )
 );
   }
+
 
 }
 

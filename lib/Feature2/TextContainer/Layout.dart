@@ -9,12 +9,18 @@ class TextContainer extends StatelessWidget{
   Widget build(BuildContext context) {
 return Container(
   width: double.infinity,
-  margin:const  EdgeInsets.only(left: 35),
+  margin:const  EdgeInsets.only(left: 29),
   child:   (
-  const Column(
+   Column(
   children: [
-    TitleText(),
-    Discription(),
+    Align(
+      alignment: Alignment.centerLeft,
+      child: Container(
+        margin: const EdgeInsets.only(bottom: 9.0),
+        child: const TitleText())),
+  const Align(
+    alignment: Alignment.centerLeft,
+    child: Discription()),
   ],
   
   
