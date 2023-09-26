@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:socialbaazar/Feature3/SignInContainer/Layout.dart';
-import 'package:socialbaazar/Feature3/ButtonGroup/Layout.dart';
-import 'package:socialbaazar/Feature3/TextContainer/layout.dart';
-import 'package:socialbaazar/Feature3/ImageContainer/Layout.dart';
+import 'package:socialbaazar/Widget/SignInContainer/Layout.dart';
+import 'ButtonGroup/Layout.dart';
+import 'TextContainer/layout.dart';
+import 'ImageContainer/Layout.dart';
 
 class Feature3 extends StatelessWidget{
   const Feature3({super.key});

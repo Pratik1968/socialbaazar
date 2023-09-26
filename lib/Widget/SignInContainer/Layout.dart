@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:socialbaazar/Feature1/SignInContainer/Background.dart';
-import 'package:socialbaazar/Feature1/SignInContainer/SignInText.dart';
+import 'Background.dart';
+import 'SignInText.dart';
 
 class SignInContainer extends StatelessWidget{
   const SignInContainer({super.key});

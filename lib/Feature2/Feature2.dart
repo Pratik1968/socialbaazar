@@ -1,11 +1,11 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:socialbaazar/Feature2/TextContainer/layout.dart';
-import 'package:socialbaazar/Feature2/ButtonGroup/Layout.dart';
+import 'TextContainer/layout.dart';
+import 'ButtonGroup/Layout.dart';
 
-import 'package:socialbaazar/Feature2/ImageContainer/Layout.dart';
-import 'package:socialbaazar/Feature2/SignInContainer/Layout.dart';
+import 'ImageContainer/Layout.dart';
+import 'package:socialbaazar/Widget/SignInContainer/Layout.dart';
 class Feature2 extends StatelessWidget{
   
   const Feature2({super.key});
