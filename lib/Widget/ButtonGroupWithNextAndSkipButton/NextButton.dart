@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class NextButton extends StatelessWidget{
-  const NextButton(BuildContext context, {super.key});
+  final String nextPath;
+  const NextButton(BuildContext context, {super.key, required this.nextPath});
 
 void nextButtonOnClick(BuildContext context){
-   context.push("/Feature3");
+   context.push(nextPath);
  }
   @override
   Widget build(BuildContext context) {

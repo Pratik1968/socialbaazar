@@ -10,9 +10,11 @@ return Container(
   child:   (
     const   Text(
           "Empowering Small business sales",
+  textAlign: TextAlign.start,
           style: TextStyle(
             fontSize: 20,
   fontWeight: FontWeight.w600,
+  
           )
   
           ,)

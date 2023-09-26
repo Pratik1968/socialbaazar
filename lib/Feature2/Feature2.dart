@@ -2,10 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'TextContainer/layout.dart';
-import 'ButtonGroup/Layout.dart';
+import 'package:socialbaazar/Widget/ButtonGroupWithNextAndSkipButton/Layout.dart';
 
 import 'ImageContainer/Layout.dart';
-import 'package:socialbaazar/Widget/SignInContainer/Layout.dart';
+import 'package:socialbaazar/Widget/SignInContainerWithGreenLinearGradientBackgroundAndSignInButton/Layout.dart';
 class Feature2 extends StatelessWidget{
   
   const Feature2({super.key});
@@ -27,7 +27,7 @@ const Scaffold(
       child: TextContainer()),
       Expanded(
         flex: 2,
-        child: ButtonContainer()),
+        child: ButtonGroup(nextPath: "/Feature3",skipPath: "/Feature3",)),
 Expanded(
   flex: 1,
   child: SignInContainer())

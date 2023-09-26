@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class SkipButton extends StatelessWidget{
-  const SkipButton(BuildContext context, {super.key});
+  final String skipPath;
+  const SkipButton(BuildContext context, {super.key, required this.skipPath});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ return(
       child: (
          TextButton(
 onPressed: (){
-context.push("/Feature3");
+context.push(skipPath);
 },
 style:  ButtonStyle(
   backgroundColor: MaterialStateProperty.all(

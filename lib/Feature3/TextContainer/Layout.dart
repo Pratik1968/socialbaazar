@@ -13,11 +13,9 @@ return Container(
   const Column(
     children: [
   Align(
-    alignment:Alignment.center,
+    alignment: Alignment.centerLeft,
     child: TitleText()),
-  Align(
-    alignment: Alignment.center,
-    child: Discription()),
+  Discription(),
   ],)
   ),
 );

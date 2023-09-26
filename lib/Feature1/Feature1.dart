@@ -2,10 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 // import 'package:socialbaazar/Feature2/Feature2.dart';
-import 'package:socialbaazar/Widget/SignInContainer/Layout.dart';
+import 'package:socialbaazar/Widget/SignInContainerWithGreenLinearGradientBackgroundAndSignInButton/Layout.dart';
 import 'ImageContainer/Layout.dart';
 import 'TextContainer/Layout.dart';
-import 'ButtonGroup/Layout.dart';
+import 'package:socialbaazar/Widget/ButtonGroupWithNextAndSkipButton/Layout.dart';
 class Feature1 extends StatelessWidget{
   const Feature1({super.key});
   Future<bool> _onWillPop() async {
@@ -31,7 +31,7 @@ return WillPopScope(
     child: TextContainer()),
     Expanded(
     flex: 2,
-    child: ButtonGroup()),
+    child: ButtonGroup(nextPath:"/Feature2",skipPath:"/Feature3")),
     Expanded(
       
       flex: 1,
