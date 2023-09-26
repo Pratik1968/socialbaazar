@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:socialbaazar/Feature1/Feature1.dart';
 import 'dart:async';
 
-import 'package:socialbaazar/Login/Login.dart';
+import 'package:socialbaazar/AccountCreation/Login/Login.dart';
 class Splash extends StatelessWidget{
   const Splash({super.key});
 
