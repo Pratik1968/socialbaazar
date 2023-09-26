@@ -5,11 +5,14 @@ class BackButtonContainer extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-return(
- const  SizedBox(
-width: double.infinity,
-    child:   Image(image: AssetImage("assets/Icons/back_arrow.png")),
-  )
+return const Align(
+  alignment: Alignment.topLeft,
+  child:   (
+    SizedBox(
+  width: double.infinity,
+      child:   Image(image: AssetImage("assets/Icons/back_arrow.png")),
+    )
+  ),
 );
   }
 }

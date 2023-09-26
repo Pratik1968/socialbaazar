@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:socialbaazar/AccountCreation/Login/BackButton/Layout.dart';
-import 'package:socialbaazar/AccountCreation/Login/PhoneInputContainer/Layout.dart';
-import 'package:socialbaazar/AccountCreation/Login/PickCountry/Layout.dart';
-import 'package:socialbaazar/AccountCreation/Login/TextContainer/Layout.dart';
-import 'package:socialbaazar/AccountCreation/Login/NextButton/Layout.dart';
-
+import 'BackButton/Layout.dart';
+import 'PhoneInputContainer/Layout.dart';
+import 'PickCountry/Layout.dart';
+import 'NextButton/Layout.dart';
+import 'TextContainer/Layout.dart';
+import 'package:socialbaazar/Widget/SignInContainerWithGreenLinearGradientBackgroundAndSignInButton/SignInText.dart';
 class Login extends StatelessWidget{
   const Login({super.key});
 
@@ -23,11 +23,24 @@ return(
         
 margin:const EdgeInsets.symmetric(horizontal: 27),
         child:   Column(children: [
-const  Expanded(child: BackButtonContainer()),
-const Expanded(child: TextContainer()),
-const Expanded(child: PhoneInputContainer()),
-const Expanded(child: PickCountry()),
-Expanded(child:  NextButton(context))
+const  Expanded(
+  flex: 1,
+  child: BackButtonContainer()),
+const Expanded(
+  flex: 1,
+  child: TextContainer()),
+const Expanded(
+  flex: 2
+  ,child: PhoneInputContainer()),
+const Expanded(
+  flex: 3,
+  child: PickCountry()),
+Expanded(
+  flex: 2,
+  child:  NextButton(context)),
+const Expanded(
+  flex: 1,
+  child: SignInText())
         ],)
       )
     ),
